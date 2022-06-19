@@ -25,7 +25,7 @@ const CartLayout = ({cart,onUpdateCartQuantity,onRemoveFromCart,onEmptyCart}) =>
           <div style={{display:"flex", justifyContent:"center"}}>
                 <Typography variant="h6" mt={5}>You have no items in your shopping cart, start adding some items to cart
                     <div style={{display:"flex", justifyContent:"center" ,margin:"5px"}}>
-                    <Link href="/" underline='none' color="success">Click here </Link>
+                    <Link component={Link} to="/" underline='none' color="success">Click here </Link>
                     </div>
                 </Typography>
           </div>
