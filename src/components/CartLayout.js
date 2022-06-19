@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import Grid from '@mui/material/Grid'
 import Stack from '@mui/material/Stack'
-import Link from "@mui/material/Link"
+import {Link} from 'react-router-dom'
 import CartItem from './Cart/CartItem';
 
 
@@ -25,7 +25,7 @@ const CartLayout = ({cart,onUpdateCartQuantity,onRemoveFromCart,onEmptyCart}) =>
           <div style={{display:"flex", justifyContent:"center"}}>
                 <Typography variant="h6" mt={5}>You have no items in your shopping cart, start adding some items to cart
                     <div style={{display:"flex", justifyContent:"center" ,margin:"5px"}}>
-                    <Link component={Link} to="/" underline='none' color="success">Click here </Link>
+                    <Button component={Link} to="/" color="success">Click here </Button>
                     </div>
                 </Typography>
           </div>
